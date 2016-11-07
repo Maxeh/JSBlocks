@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+* { 
+	padding:0;
+ 	margin:0;
+	color:grey;
+	cursor:default;
+}
+hr {
+	border: none; 
+	border-top: 1px solid #5649ff;  
+	background-color: #F5F5F5; 
+	height: 1px;
+}
+html { background:url(Bilder/html-bg.png); }
+#wrapper {
+	position:absolute;
+	top:100px; 
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	width:696px;
+	height:630px;
+}	
+#tetris-wrapper {
+	position:absolute;
+	overflow:hidden;
+	box-sizing:border-box;
+	width:451px;
+	height:571px;
+	background:url(Bilder/bg.png);
+	border:1px solid #5649ff;	
+}
+#info-wrapper {
+	position:absolute;
+	color:#5649ff;
+	box-sizing:border-box;
+	left:455px;
+	width:242px;
+	height:240px;
+	padding:10px;
+	background:url(Bilder/bg.png);
+	border:1px solid #5649ff;
+	font-family:Consolas, "Courier New", monospace;
+}
+#info-wrapper #tetris-caption {
+	text-align:center;
+	font-size:32px;
+	border:1px solid #5649ff;
+	border-radius:40px;
+}
+#info-wrapper table {
+	position:absolute;
+	top:143px;
+}
+#info-wrapper td:first-child { padding-right:30px; }
+#info-wrapper td {
+	padding-top:4px;
+	padding-bottom:4px;
+	color:#5649ff;
+}
+#settings-wrapper {
+	position:absolute;
+	color:#5649ff;
+	box-sizing:border-box;
+	width:242px;
+	height:326px;
+	top:245px;
+	left:455px;
+	padding:10px;
+	background:url(Bilder/bg.png);
+	border:1px solid #5649ff;
+	font-family:Consolas, "Courier New", monospace;
+}
+#start-button, #pause-button {
+	position:relative;
+	top:576px;
+	padding:7px 10px;
+	border:1px solid #5649ff;
+	background:url(Bilder/bg.png);
+	color:black;
+	cursor:pointer;
+	outline:none;
+	color:#5649ff;
+}
+#start-button.disabled, #pause-button.disabled {
+	color:#666;
+}
+#control, #level {
+	margin:15px 0px;
+}
+#control-select { width:100% }
+input[type="radio"], input[type="checkbox"] {
+	margin:7px 5px;
+	outline:none;
+}
+.box, .box2, .nextBox {
+	position: absolute;
+	border:1px solid black;
+	width:29px;
+	height:29px;
+}
+#game-over {
+	position:absolute;
+	z-index:2;
+	left:100px;
+	top:100px;
+	width:250px;
+	height:100px;
+	background:#F3F3F3;
+	border:1px solid #5649ff;
+	border-radius:5px;
+	box-shadow:0 0 100px;
+}
+#game-over-caption {
+	display:block;
+	position:absolute;
+	top:37px;
+	width:100%;
+	text-align:center;
+	font-size:26px;
+	color: #5649ff;
+	font-family:Consolas, "Courier New", monospace;
+}
+	

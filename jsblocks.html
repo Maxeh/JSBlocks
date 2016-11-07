@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tetris</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+    	<div id="game-over" style="display:none">
+        	<span id="game-over-caption">GAME OVER</span>
+        </div>
+		<div id="tetris-wrapper">
+    
+   		</div>
+        <div id="info-wrapper">
+        Information<hr><br><br>
+        	<div id="tetris-caption"><span style="color:orange">T</span> <span style="color:#aa00ff">E</span> <span style="color:#5649ff">T</span> <span style="color:#00d8ff">R</span> <span style="color:#ff0000">I</span> <span style="color:#6edd4f">S</span></div>
+        	<table>
+            	<tr>
+                	<td>Punkte</td>
+                    <td id="points">0</td>
+                </tr>
+                <tr>
+                	<td>Bauteile</td>
+                    <td id="tetris-parts-count">0</td>
+                </tr>
+                <tr>
+                	<td>Zeilen</td>
+                    <td id="lines-count">0</td>
+                </tr>
+            </table>
+   		</div>
+        <div id="settings-wrapper">
+        Einstellungen<hr>
+            <div id="control">
+                Steuerung
+                <select id="control-select">
+                    <option>Mit Pfeiltasten steuern</option>
+                    <option>Mit W,A,S,D steuern</option>
+                </select>
+            </div>
+            <div id="level">
+                Schwierigkeit<br>
+                <input type="radio" name="speed"> Leicht<br> 
+                <input type="radio" name="speed" checked> Normal<br> 
+                <input type="radio" name="speed"> Schwierig<br>
+                <input type="radio" name="speed"> Extrem
+            </div>
+            <div id="music">
+           		Musik<br>
+            	<input type="checkbox" id="music-checkbox"> Melodie an<br> 
+                <audio id="audiofile" preload="auto" loop>
+                    <source src="jsblocks.m4a">
+                    <source src="jsblocks.mp3">
+                </audio>
+            
+            </div>
+   		</div>
+        <button id="start-button">Spiel starten [Enter]</button>
+        <button id="pause-button" disabled class="disabled">Spiel pausieren [P]</button>
+    </div>
+</body>
+</html>
+
